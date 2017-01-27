@@ -1,3 +1,5 @@
+package e2_1
+
 object Fib extends App {
   def fib1(n: Int): Int =
     n match {
