@@ -13,7 +13,7 @@ object IsSorted extends App {
   }
 
   val intAs = Array(1,2,3,4,5)
-  val stringAs = Array("china", "America", "Brazil")
+  val stringAs = Array("China", "America", "Brazil")
   println(isSorted(intAs, (_: Int) <= (_: Int)))
   println(isSorted(Array(), (_: Int) <= (_: Int)))
   println(isSorted(Array(1), (_: Int) <= (_: Int)))
