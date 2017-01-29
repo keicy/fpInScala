@@ -12,10 +12,10 @@ object IsSorted extends App {
     loop(as)
   }
 
-  val intAs = Array(1,2,3,4,5)
-  val stringAs = Array("China", "America", "Brazil")
-  println(isSorted(intAs, (_: Int) <= (_: Int)))
+  println(isSorted(Array(1,2,3,4,5), (_: Int) <= (_: Int)))
+  println(isSorted(Array(1,2), (_: Int) <= (_: Int)))
+  println(isSorted(Array(2,1), (_: Int) <= (_: Int)))
   println(isSorted(Array(), (_: Int) <= (_: Int)))
   println(isSorted(Array(1), (_: Int) <= (_: Int)))
-  println(isSorted(stringAs, (_: String) <= (_: String)))
+  println(isSorted(Array("China", "America", "Brazil"), (_: String) <= (_: String)))
 }
